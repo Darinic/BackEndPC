@@ -1,16 +1,11 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using Thoughts.Domain.Entities;
 using Thoughts.Core.ConfigModels;
 using Microsoft.AspNetCore.WebUtilities;
-using Org.BouncyCastle.Asn1.Ocsp;
 using Logistics.Domain.Exceptions;
 
 namespace Thoughts.Core.Services

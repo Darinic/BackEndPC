@@ -71,6 +71,7 @@ namespace Thoughts.Core.Services
 			return thought;
 		}
 
+
 		public async Task<Thought> RetrieveAndValidateThoughtBeforeChanges(Guid thoughtId, string userId)
 		{
 			var thought = await RetrieveAndValidateThought(thoughtId);
@@ -113,22 +114,13 @@ namespace Thoughts.Core.Services
 			if (!result)
 				throw new ValidationException("Password is incorrect");
 		}
-
+		
 		public async Task ValidateUserRegistration(string email, string username)
 		{
 			await ValidateIfEmailExists(username);
 			await ValidateIfUsernameExists(email);
 		}
 
-		public async Task<User> ValidateUserByUserId(string userId)
-		{
-			var user = await _userManager.FindByIdAsync(userId);
-
-			if (user == null)
-				throw new ValidationException("User does not exist");
-
-			return user;
-		}
 
 		private async Task ValidateIfUsernameExists(string username)
 		{
@@ -143,6 +135,16 @@ namespace Thoughts.Core.Services
 
 			if (existingEmail != null)
 				throw new ValidationException("Email already in use");
+		}
+
+		public async Task<User> ValidateUserByUserId(string userId)
+		{
+			var user = await _userManager.FindByIdAsync(userId);
+
+			if (user == null)
+				throw new ValidationException("User does not exist");
+
+			return user;
 		}
 
 		private void ValidateUserId(string userId)

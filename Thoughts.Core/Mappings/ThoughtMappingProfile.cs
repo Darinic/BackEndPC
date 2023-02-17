@@ -21,7 +21,6 @@ namespace Thoughts.Core.Mappings
 				.ForMember(dest => dest.LikesCount, opt => opt.MapFrom(src => src.Likes.Count))
 				.ForMember(dest => dest.Comments, opt => opt.MapFrom(src => src.Comments.OrderByDescending(c => c.CreationDate)))
 				.ForMember(dest => dest.CommentsCount, opt => opt.MapFrom(src => src.Comments.Count));
-
 		}
 
     }

@@ -18,6 +18,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thoughts.Infrastructure", "
 		{F6B505F4-8A7F-4E76-8DBF-3CA7CEBF8802} = {F6B505F4-8A7F-4E76-8DBF-3CA7CEBF8802}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thoughts.Tests", "Thoughts.Tests\Thoughts.Tests.csproj", "{4828E80B-51A1-4F17-B847-9D3B60F6581F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ACBA6876-FCBA-4262-8680-73ABA085FF55} = {ACBA6876-FCBA-4262-8680-73ABA085FF55}
+		{D462D8C0-CFB0-48B7-8452-9E875070794B} = {D462D8C0-CFB0-48B7-8452-9E875070794B}
+		{F6B505F4-8A7F-4E76-8DBF-3CA7CEBF8802} = {F6B505F4-8A7F-4E76-8DBF-3CA7CEBF8802}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +47,10 @@ Global
 		{D462D8C0-CFB0-48B7-8452-9E875070794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D462D8C0-CFB0-48B7-8452-9E875070794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D462D8C0-CFB0-48B7-8452-9E875070794B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4828E80B-51A1-4F17-B847-9D3B60F6581F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4828E80B-51A1-4F17-B847-9D3B60F6581F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4828E80B-51A1-4F17-B847-9D3B60F6581F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4828E80B-51A1-4F17-B847-9D3B60F6581F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
